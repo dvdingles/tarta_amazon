@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           width: 100,
           height: 100,
         }
-        ,  focus: 10, fov: 25 ,zoom: .5, position:[0, .9, 4]}} >
+        ,  focus: 10, fov: 25 ,zoom: 1.8, position:[0, .9, 4]}} >
       {/* <focus-camera> */}
       <ambientLight intensity={.5} />
       <pointLight position={[10, 10, 10]} />
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
       {/* <Environment far={10} files="/nieve.hdr" ground={{ height: 10, scale: 1 }} /> */}
         
           <Dav 
-            position={[0,0.8,0]}
+            position={[0,0.3,0]}
             // rotation={[0,1.5,0]}
           />
        
