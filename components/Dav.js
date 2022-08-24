@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/tarta.gltf");
+  const { nodes, materials } = useGLTF("/tarta1.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -14,195 +14,51 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Cylinder.geometry}
         material={materials.BODY1_ARD_front}
-        position={[0, 0.58, 0]}
-        scale={0.25}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Cylinder001.geometry}
         material={materials.BODY1_ARD_front}
-        position={[-0.01, 0.07, 0]}
-        scale={0.44}
       />
-      <group position={[0, 0.42, 0]} rotation={[0, 1.56, -1.57]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["tarta-peq_ARD-geom"].geometry}
-          material={materials["tarta-peq_ARD_front"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["tarta-peq_ARD-geom_1"].geometry}
-          material={materials["tarta-peq_ARD_back"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["tarta-peq_ARD-geom_2"].geometry}
-          material={materials["tarta-peq_ARD_edge"]}
-        />
-      </group>
-      <group position={[0, -0.21, 0]} rotation={[Math.PI, 1.4, -Math.PI / 2]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["tarta-big_ARD-geom"].geometry}
-          material={materials["tarta-big_ARD_front"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["tarta-big_ARD-geom_1"].geometry}
-          material={materials["tarta-big_ARD_back"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["tarta-big_ARD-geom_2"].geometry}
-          material={materials["tarta-big_ARD_edge"]}
-        />
-      </group>
-      <group
-        position={[-1.06, -0.72, 0.01]}
-        rotation={[Math.PI / 2, 0, -Math.PI]}
-        scale={0}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom003"].geometry}
-          material={materials["capitel-vi_ARD_front.001"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom003_1"].geometry}
-          material={materials["capitel-vi_ARD_back"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom003_2"].geometry}
-          material={materials["capitel-vi_ARD_edge"]}
-        />
-      </group>
-      <group
-        position={[0.96, -0.72, 0.01]}
-        rotation={[Math.PI / 2, 0, -Math.PI]}
-        scale={0}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom003"].geometry}
-          material={materials["capitel-vi_ARD_front.001"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom003_1"].geometry}
-          material={materials["capitel-vi_ARD_back"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom003_2"].geometry}
-          material={materials["capitel-vi_ARD_edge"]}
-        />
-      </group>
-      <group
-        position={[-1.02, 1.09, 0.01]}
-        rotation={[-Math.PI / 2, 0, 0]}
-        scale={0}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom"].geometry}
-          material={materials["capitel-vi_ARD_front"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom_1"].geometry}
-          material={materials["capitel-vi_ARD_back"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom_2"].geometry}
-          material={materials["capitel-vi_ARD_edge"]}
-        />
-      </group>
-      <group
-        position={[1.01, 1.09, 0.01]}
-        rotation={[-Math.PI / 2, 0, 0]}
-        scale={0}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom"].geometry}
-          material={materials["capitel-vi_ARD_front"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom_1"].geometry}
-          material={materials["capitel-vi_ARD_back"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["capitel-vi_ARD-geom_2"].geometry}
-          material={materials["capitel-vi_ARD_edge"]}
-        />
-      </group>
-      <group position={[-1.05, 0.18, 0]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["COLUMNA_ARD-geom"].geometry}
-          material={materials.COLUMNA_ARD_front}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["COLUMNA_ARD-geom_1"].geometry}
-          material={materials.COLUMNA_ARD_back}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["COLUMNA_ARD-geom_2"].geometry}
-          material={materials.COLUMNA_ARD_edge}
-        />
-      </group>
-      <group position={[0.98, 0.18, 0]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["COLUMNA_ARD-geom"].geometry}
-          material={materials.COLUMNA_ARD_front}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["COLUMNA_ARD-geom_1"].geometry}
-          material={materials.COLUMNA_ARD_back}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["COLUMNA_ARD-geom_2"].geometry}
-          material={materials.COLUMNA_ARD_edge}
-        />
-      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["tarta-peq_ARD-geom"].geometry}
+        material={materials["tarta-peq_ARD_front"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["tarta-peq_ARD-geom_1"].geometry}
+        material={materials["tarta-peq_ARD_back"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["tarta-peq_ARD-geom_2"].geometry}
+        material={materials["tarta-peq_ARD_edge"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["tarta-big_ARD-geom"].geometry}
+        material={materials["tarta-big_ARD_front"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["tarta-big_ARD-geom_1"].geometry}
+        material={materials["tarta-big_ARD_back"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["tarta-big_ARD-geom_2"].geometry}
+        material={materials["tarta-big_ARD_edge"]}
+      />
     </group>
   );
 }
 
-useGLTF.preload("/tarta.gltf");
+useGLTF.preload("/tarta1.gltf");
